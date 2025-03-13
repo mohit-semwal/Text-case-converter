@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+/* Main Container */
+.text-converter-container {
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/* Title */
+.title h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* Textarea */
+.content-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-div textarea {
+    width: 100%;
+    min-height: 200px;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    resize: vertical;
+}
+
+/* Buttons Container */
+.button-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Button Rows */
+.button-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+/* Buttons */
+.button-div button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-div button:hover {
+    opacity: 0.8;
+}
+
+/* Counters */
+.counter-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.counter-div div {
+    background: #ddd;
+    padding: 8px 15px;
+    border-radius: 10px;
+    min-width: 130px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-converter-container {
+        width: 95%;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-div textarea {
+        font-size: 1rem;
+    }
+
+    .button-div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .button-div button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .counter-div {
+        flex-wrap: wrap;
+    }
+
+    .counter-div div {
+        min-width: 100px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .button-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-div button {
+        width: 90%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .counter-div div {
+        min-width: 90px;
+        font-size: 0.9rem;
+    }
+}
